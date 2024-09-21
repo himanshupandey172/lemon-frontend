@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCube, Pagination } from "swiper/modules";
+import { Autoplay, EffectCube, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-cube";
@@ -31,14 +31,18 @@ const CubeSwiper = ({ handleVisible }) => {
         style={styles.swiper}
         effect={"cube"}
         grabCursor={true}
+        autoplay
         cubeEffect={{
           shadow: true,
           slideShadows: true,
           shadowOffset: 20,
           shadowScale: 0.94,
+          autoplay: {
+            delay: 2000,
+          },
         }}
         pagination={true}
-        modules={[EffectCube, Pagination]}
+        modules={[Autoplay, EffectCube, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide

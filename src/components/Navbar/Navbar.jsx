@@ -30,7 +30,8 @@ const pages = [
     arrow: true,
   },
   {
-    title: "Contact",
+    title: "For Employees",
+    // link: "/auth",
     arrow: false,
   },
 ];

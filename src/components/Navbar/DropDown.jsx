@@ -21,10 +21,10 @@ const products = [
 ];
 
 const services = [
-  { title: "Material Handling", link: "/services/materialHandling" },
+  { title: "Virtual Commissioning", link: "/services/virtualcom" },
   { title: "Welding" },
   { title: "Machining & Tooling" },
-  { title: "Virtual Commissioning" },
+  { title: "software testing", link: "/services/softwaretest" },
   { title: "All Services", link: "/services" },
 ];
 

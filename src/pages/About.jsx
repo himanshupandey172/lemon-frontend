@@ -9,7 +9,7 @@ import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 // import required modules
 import { EffectCube, Pagination } from "swiper/modules";
-import { CardSwiper, CubeSwiper } from "../components";
+import { CubeSwiper } from "../components";
 
 const icon = (
   <Paper sx={{ m: 1, width: 100, height: 100 }} elevation={4}>

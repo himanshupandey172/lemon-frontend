@@ -1,3 +1,4 @@
+import { capitalize } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import createBreakpoints from "@mui/system/createTheme/createBreakpoints";
 
@@ -28,6 +29,14 @@ const theme = createTheme({
   },
 
   typography: {
+    h1: {
+      fontFamily: "Montserrat, sans-serif",
+      fontSize: "50px",
+      fontWeight: 700,
+      lineHeight: "55px",
+      textTransform: "capitalize",
+    },
+
     h2: {
       fontFamily: "Montserrat, sans-serif",
       fontSize: "42px",
@@ -37,6 +46,19 @@ const theme = createTheme({
       [breakpoints.up("md")]: {
         fontSize: "64px",
         lineHeight: "78px",
+      },
+    },
+    h3: {
+      fontWeight: 500,
+      lineHeight: "20px",
+      textTransform: "uppercase",
+      color: "#fff",
+      fontSize: "1.2rem",
+      "@media (min-width:600px)": {
+        fontSize: "1.5rem",
+      },
+      [breakpoints.up("md")]: {
+        fontSize: "2.4rem",
       },
     },
     gradientText: {

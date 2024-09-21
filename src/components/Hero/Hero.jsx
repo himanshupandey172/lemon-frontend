@@ -7,6 +7,7 @@ import heroAnimation from "../../assets/animations/hero_animation.json";
 import styles from "./styles";
 
 import Button from "../Button/Button";
+import Counter from "../Counter/Counter";
 
 const Hero = () => {
   const style = {
@@ -49,6 +50,21 @@ const Hero = () => {
           >
             {View}
             <Button>Explore with us</Button>
+          </Grid>
+          <Grid
+            container
+            spacing={{ xs: 2, md: 3 }}
+            columns={{ xs: 4, sm: 8, md: 12 }}
+          >
+            <Grid item xs={12} sm={4}>
+              <Counter end={400} />
+            </Grid>
+            <Grid item xs={2} sm={4}>
+              <Counter end={500} />
+            </Grid>
+            <Grid item xs={2} sm={4}>
+              <Counter end={600} />
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
